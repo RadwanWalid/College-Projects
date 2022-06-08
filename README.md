@@ -21,3 +21,6 @@ University Projects
    
 7) Online Supermarket Website
    The objective of this project is to develope a network application based on the client/server architecture. This is achieved by creating a web application that is      used as a simple shopping website. The website allows the users to lookup products descriptions, types, manufacturers… etc. Users should be allowed to create an        account, add items to their “cart” and search for products.
+
+8) Smart Parking Lot
+   The intention of this project is to learn VHDL and test it on hardware. The idea that I used was to create a small prototype of a parking lot the opens and closes      the gate automatically in addition to counting the number of cars in the lot to check on capacity.
