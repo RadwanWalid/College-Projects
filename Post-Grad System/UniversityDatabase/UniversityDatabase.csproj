@@ -1,0 +1,369 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{119EB3A8-EB55-4F19-87E6-5F66103BE934}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniversityDatabase</RootNamespace>
+    <AssemblyName>UniversityDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44365</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add Comment for Defense.aspx" />
+    <Content Include="Add Grade for Defense.aspx" />
+    <Content Include="AddDefenseThesis.aspx" />
+    <Content Include="AddExaminer.aspx" />
+    <Content Include="AddProgressReport.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="Edit Examiner Profile.aspx" />
+    <Content Include="Examiner Home Page.aspx" />
+    <Content Include="ExaminerRegister.aspx" />
+    <Content Include="FillProgressReport.aspx" />
+    <Content Include="GucianStudentLog.aspx" />
+    <Content Include="Images\Login Icon.png" />
+    <Content Include="Images\LoginBg.jpg" />
+    <Content Include="Images\Examiner.jpg" />
+    <Content Include="Images\View Thesis.jpg" />
+    <Content Include="IssueInstallments.aspx" />
+    <Content Include="IssueThesisPayment.aspx" />
+    <Content Include="ListOfSups.aspx" />
+    <Content Include="ListOfTheses.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MyCoursesgrade.aspx" />
+    <Content Include="myStudentsYears.aspx" />
+    <Content Include="MyThesis.aspx" />
+    <Content Include="NonGucianStudentLog.aspx" />
+    <Content Include="Publication.aspx" />
+    <Content Include="studentProgressEval.aspx" />
+    <Content Include="StudentRegister.aspx" />
+    <Content Include="SupervisorLog.aspx" />
+    <Content Include="SupervisorRegister.aspx" />
+    <Content Include="SupervisorUpdateProfile.aspx" />
+    <Content Include="UpdateExtensions.aspx" />
+    <Content Include="View Theses.aspx" />
+    <Content Include="ViewStudentPublications.aspx" />
+    <Content Include="ViewSuperVisorProfile.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionResult.cs" />
+    <Compile Include="Add Comment for Defense.aspx.cs">
+      <DependentUpon>Add Comment for Defense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Comment for Defense.aspx.designer.cs">
+      <DependentUpon>Add Comment for Defense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add Grade for Defense.aspx.cs">
+      <DependentUpon>Add Grade for Defense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Grade for Defense.aspx.designer.cs">
+      <DependentUpon>Add Grade for Defense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDefenseThesis.aspx.cs">
+      <DependentUpon>AddDefenseThesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDefenseThesis.aspx.designer.cs">
+      <DependentUpon>AddDefenseThesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddExaminer.aspx.cs">
+      <DependentUpon>AddExaminer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddExaminer.aspx.designer.cs">
+      <DependentUpon>AddExaminer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProgressReport.aspx.cs">
+      <DependentUpon>AddProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProgressReport.aspx.designer.cs">
+      <DependentUpon>AddProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Examiner Profile.aspx.cs">
+      <DependentUpon>Edit Examiner Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit Examiner Profile.aspx.designer.cs">
+      <DependentUpon>Edit Examiner Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examiner Home Page.aspx.cs">
+      <DependentUpon>Examiner Home Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examiner Home Page.aspx.designer.cs">
+      <DependentUpon>Examiner Home Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExaminerRegister.aspx.cs">
+      <DependentUpon>ExaminerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExaminerRegister.aspx.designer.cs">
+      <DependentUpon>ExaminerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillProgressReport.aspx.cs">
+      <DependentUpon>FillProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillProgressReport.aspx.designer.cs">
+      <DependentUpon>FillProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GucianStudentLog.aspx.cs">
+      <DependentUpon>GucianStudentLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GucianStudentLog.aspx.designer.cs">
+      <DependentUpon>GucianStudentLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueInstallments.aspx.cs">
+      <DependentUpon>IssueInstallments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueInstallments.aspx.designer.cs">
+      <DependentUpon>IssueInstallments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueThesisPayment.aspx.cs">
+      <DependentUpon>IssueThesisPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueThesisPayment.aspx.designer.cs">
+      <DependentUpon>IssueThesisPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfSups.aspx.cs">
+      <DependentUpon>ListOfSups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListOfSups.aspx.designer.cs">
+      <DependentUpon>ListOfSups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfTheses.aspx.cs">
+      <DependentUpon>ListOfTheses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListOfTheses.aspx.designer.cs">
+      <DependentUpon>ListOfTheses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCoursesgrade.aspx.cs">
+      <DependentUpon>MyCoursesgrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCoursesgrade.aspx.designer.cs">
+      <DependentUpon>MyCoursesgrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myStudentsYears.aspx.cs">
+      <DependentUpon>myStudentsYears.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myStudentsYears.aspx.designer.cs">
+      <DependentUpon>myStudentsYears.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyThesis.aspx.cs">
+      <DependentUpon>MyThesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyThesis.aspx.designer.cs">
+      <DependentUpon>MyThesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NonGucianStudentLog.aspx.cs">
+      <DependentUpon>NonGucianStudentLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NonGucianStudentLog.aspx.designer.cs">
+      <DependentUpon>NonGucianStudentLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publication.aspx.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publication.aspx.designer.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLException.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="studentProgressEval.aspx.cs">
+      <DependentUpon>studentProgressEval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentProgressEval.aspx.designer.cs">
+      <DependentUpon>studentProgressEval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegister.aspx.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentRegister.aspx.designer.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorLog.aspx.cs">
+      <DependentUpon>SupervisorLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorLog.aspx.designer.cs">
+      <DependentUpon>SupervisorLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorRegister.aspx.cs">
+      <DependentUpon>SupervisorRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorRegister.aspx.designer.cs">
+      <DependentUpon>SupervisorRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorUpdateProfile.aspx.cs">
+      <DependentUpon>SupervisorUpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorUpdateProfile.aspx.designer.cs">
+      <DependentUpon>SupervisorUpdateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateExtensions.aspx.cs">
+      <DependentUpon>UpdateExtensions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateExtensions.aspx.designer.cs">
+      <DependentUpon>UpdateExtensions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Theses.aspx.cs">
+      <DependentUpon>View Theses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Theses.aspx.designer.cs">
+      <DependentUpon>View Theses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudentPublications.aspx.cs">
+      <DependentUpon>ViewStudentPublications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStudentPublications.aspx.designer.cs">
+      <DependentUpon>ViewStudentPublications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSuperVisorProfile.aspx.cs">
+      <DependentUpon>ViewSuperVisorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSuperVisorProfile.aspx.designer.cs">
+      <DependentUpon>ViewSuperVisorProfile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53033</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44365/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
